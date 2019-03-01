@@ -1,0 +1,29 @@
+.btn-filled{
+    font-size:0.8125rem;
+    width:180px;
+    border:none;
+    padding: .5rem .75rem;
+    line-height:0.9375rem;
+    margin-right:0.625rem;
+    &.btn-primary:hover{
+        background-color:rgb(198, 78, 75);
+    }
+}
+
+.btn{
+    text-transform:uppercase;
+    font-weight:700;
+    border-radius:0;
+
+}
+
+.btn-clear{
+    font-size:1.625rem;
+    padding:0.625rem 1.875rem;
+    width:250px;
+    &.btn-outline-primary:hover{
+        background-color:white;
+        color:$primary;
+        border-color:white;
+    }
+}

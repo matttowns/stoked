@@ -1,0 +1,47 @@
+.contact-background-image{
+    background-image:url('../images/stoked-section5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vw;
+    width:100vw;
+    @include media-breakpoint-up(lg){
+        height:100%;
+        width:100%;
+    }
+   
+}
+
+.contact-form{
+    .form-group{
+        margin-bottom:.625rem;
+        &.form-group-consent, &.form-group-message{
+            margin-bottom:1.25rem;
+        }
+    }
+    .form-control{
+        border:2px solid rgba(51,51,51,0.1);
+        border-radius:1px;
+        padding:.3125rem .9375rem;
+        font-size: .875rem;
+        &::placeholder {
+            color: rgba(51,51,51,0.3);
+        }
+        &.textbox{
+            height:1.875rem;;
+        }
+    }
+    .btn{
+        height:1.875rem;
+        line-height:1.875rem;
+        padding:0 1.125rem;
+        font-size:.9125rem;
+    }
+    .form-check-label{
+        font-size:.8125rem;
+    }
+}
+
+.contact-column{
+    padding:6.25rem 1.25rem !important;
+}

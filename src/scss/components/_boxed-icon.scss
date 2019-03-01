@@ -1,0 +1,30 @@
+.boxed-icon{
+    @extend %fa-icon;
+    @extend .fas;
+    height:3.75rem;
+    width:3.75rem;
+    box-sizing:content-box;
+    margin-right:0.9375rem;
+    &:before {
+        font-size:1.875rem;
+        line-height:3.75rem;      
+    }
+    &.icon-user:before{
+        content: fa-content($fa-var-user);
+    }
+    &.icon-cog:before{
+        content: fa-content($fa-var-cogs);
+    }
+    &.icon-pointer:before{
+        content: fa-content($fa-var-map-marker-alt);
+    }
+    &.icon-design:before{
+        content: fa-content($fa-var-paint-brush);
+    }
+    &.icon-print:before{
+        content: fa-content($fa-var-tint);
+    }
+    &.icon-web:before{
+        content: fa-content($fa-var-desktop);
+    }
+}

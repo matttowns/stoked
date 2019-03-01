@@ -1,0 +1,113 @@
+body{
+    display:flex;
+    flex-flow:column;
+    position:relative;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.section-header{
+    font-weight:700;
+    position:relative;
+    font-size:2.125rem;
+    @include media-breakpoint-up(md){
+        font-size:2.625rem;
+    }
+    &:after{
+        height:3px;
+        width:240px;
+        content:'';
+        display:block;
+        margin:1.25rem auto 1.875rem auto;
+        background-image: linear-gradient(to left, $primary 50%, rgba(255,255,255,0) 0%, $primary 50%, rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 120px 5px;
+        background-repeat: repeat-x;
+        position:relative;
+        left:30px;
+    }
+    &:before{
+        @extend %fa-icon;
+        @extend .fas;
+        width:1.1875rem;
+        display:block;
+        background-color:transparent;
+        height:20px;
+        font-size:1.125rem;
+        content: fa-content($fa-var-chevron-down);
+        position:absolute;
+        top:90%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+.section-subheader{
+    font-weight:700;
+    margin-bottom:1.25rem;
+}
+
+.section-list-header{
+    font-weight:700;
+    margin-bottom:0.625rem;
+}
+
+.content-section{
+    padding:5rem 0 6.25rem 0;
+}
+
+.border-3{
+    border-width:3px !important;
+    border-style: solid;
+}
+
+.text-content{
+    line-height:1.75rem;
+}
+
+.no-padding{
+    padding:0 !important;
+    overflow:hidden;
+}
+
+.card{
+    flex-grow:1;
+    border-radius:0;
+}
+
+.card-header-text{
+    margin:1.5625rem 0 0.9375rem 0;
+    font-size:1.625rem;
+}
+
+.container.container-larger{
+    max-width:1190px;
+}
+
+.underlined-text{
+    &:after{
+        display:block;
+        height:3px;
+        width:60px;
+        background-color:$primary;
+        margin-left:auto;
+        margin-right:auto;
+        content:'';
+        margin-top:1.6875rem;
+    }
+}
+
+.form-check-input{
+    margin-left:0;
+}
+.form-check-label{
+    margin-left:1.25rem;
+}
+
+.section-content{
+    margin-bottom:3.125rem;
+}

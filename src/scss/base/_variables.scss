@@ -1,0 +1,31 @@
+//Breakpoints
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+//Colours
+$primary: #f3615a;
+$secondary: rgb(133, 134, 140);
+$light: rgba(0, 0, 0, 0.49);
+$dark: rgba(0, 0, 0, 0.91);
+
+//Typography
+$h3-font-size: 2.625rem;
+$mainFont: 'Roboto';
+$secondaryFont: 'Roboto Condensed';
+
+//Navbar
+$navbar-light-color: #ffffff;
+$navbar-light-hover-color: #ffffff;
+$navbar-light-active-color: #ffffff;
+$navbar-nav-link-padding-x: .25rem;
+$navbar-padding-y:  0;
+
+//Cards
+$card-spacer-x:1.875rem;

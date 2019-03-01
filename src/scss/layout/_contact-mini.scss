@@ -1,0 +1,28 @@
+#contact-mini-section{
+    background-image:
+        linear-gradient(
+            rgba(26,0,33,0.75), 
+            rgba(26,0,33,0.75)
+        ),
+        url('../images/stoked-section6.jpg');
+        background-repeat: repeat;
+        background-size:120%;
+
+    .section-header{
+        font-size:2.625rem;
+    }
+    .section-subheader{
+        font-size:1.5rem;
+        margin:2rem 0;
+        @include media-breakpoint-up(md){
+            font-size:2.1875rem;
+        }
+    }
+    .btn{
+        font-size:1.25rem;
+        @include media-breakpoint-up(md){
+            width:275px;
+        }
+        width:100%;
+    }
+}
