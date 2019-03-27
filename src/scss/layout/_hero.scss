@@ -119,14 +119,25 @@
     .hero-text{
         font-weight:900;
         font-size:2rem;
+        @include media-breakpoint-up(xs) {
+            margin:0 2.5rem;
+        }
         @include media-breakpoint-up(sm) {
+            margin:0 0 0 0;
             font-size:3.6875rem;
         }
         @include media-breakpoint-up(md) {
             font-size:4.9375rem;
         }
+        @include media-breakpoint-up(lg){
+            margin:0 1.25rem;
+        }
         @include media-breakpoint-up(xl){
             font-size:6.875rem;
+        }
+        @include media-breakpoint-up(xxl){
+            margin:0 auto;
+            max-width:1200px;
         }
         color:white;
         .hero-text-section{
